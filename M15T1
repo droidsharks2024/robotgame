@@ -1,0 +1,52 @@
+from pybricks.hubs import PrimeHub
+from pybricks.pupdevices import Motor, ColorSensor, UltrasonicSensor, ForceSensor
+from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
+from pybricks.robotics import DriveBase
+from pybricks.tools import wait, StopWatch
+
+hub = PrimeHub()
+
+#F = Left Wheel
+#E = Right Gear
+#A = Left Gear
+#B = Right Wheel
+
+# Initialize motors
+motor_front_left = Motor(Port.F,Direction.COUNTERCLOCKWISE)
+motor_front_right = Motor(Port.B,Direction.CLOCKWISE)
+motor_gear_1 = Motor(Port.A)
+
+# Initialize drivebase
+drivebase = DriveBase(motor_front_left, motor_front_right,87,136)
+#drivebase.settings(500,100,500,100)
+
+#enable gyro
+drivebase.use_gyro(True)
+
+# Set desired speed
+speed = 2000  # mm/s
+
+# Drive forward at the specified speed
+drivebase.drive(speed,5000)  # Drive for 5 seconds
+
+#wait time
+waittime = 600
+
+drivebase.straight(580)
+wait (waittime)
+
+motor_gear_1.run(440)
+wait(waittime)
+motor_gear_1.stop()
+
+drivebase.straight(-140)
+wait (waittime)
+
+#drivebase.turn(-40)
+#wait (waittime)
+
+drivebase.straight(-440)
+wait (waittime)
+
+motor_gear_1.run(-400)
+wait(waittime)
