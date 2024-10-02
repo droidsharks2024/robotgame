@@ -1,3 +1,8 @@
+'''
+this script contains code for collecting krills and coral
+for missions 3 and 12
+'''
+
 from pybricks.hubs import PrimeHub
 from pybricks.pupdevices import Motor, ColorSensor, UltrasonicSensor, ForceSensor
 from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
