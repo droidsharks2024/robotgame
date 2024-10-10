@@ -18,8 +18,32 @@ right_angle = MotorB.angle()
 drive_base = DriveBase(MotorA, MotorB, wheel_diameter=56, axle_track=112)
 
 '''
+
+'''
+
 drive_base.straight(300)
+wait(1000)
+drive_base.turn(37)
+drive_base.straight(100)
+wait(1000)
 drive_base.turn(-20)
+drive_base.straight(120)
+wait(1000)
+drive_base.turn(45)
+drive_base.straight(95)
+drive_base.straight(50)
+wait(1000)
+drive_base.turn(-20)
+drive_base.turn(-25)
+wait(1000)
+drive_base.straight(40)
+wait(1000)
+drive_base.turn(-70)
+drive_base.straight(700)
+drive_base.straight(200)
+drive_base.turn(-30)
+'''
+
 drive_base.straight(150)
 drive_base.turn(30)#collect water sample
 drive_base.straight(100)#collect krill
@@ -30,22 +54,3 @@ drive_base.straight(100)#collect coral2
 drive_base.turn(25)
 drive_base.straight(500)#back to red home base
 '''
-
-drive_base.straight(300)
-wait(1000)
-drive_base.turn(37)
-drive_base.straight(100)
-wait(1000)
-drive_base.turn(-30)
-drive_base.straight(100)
-wait(1000)
-drive_base.turn(47)
-drive_base.straight(95)
-drive_base.straight(50)
-wait(1000)
-drive_base.turn(-45)
-wait(1000)
-drive_base.straight(30)
-drive_base.turn(-45)
-#drive_base.turn(-25)
-#drive_base.turn(-14.5)
