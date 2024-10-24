@@ -16,17 +16,16 @@ MotorB = Motor(Port.B, Direction.CLOCKWISE)
 left_angle = MotorA.angle()
 right_angle = MotorB.angle()
 drive_base = DriveBase(MotorA, MotorB, wheel_diameter=56, axle_track=112)
+drive_base.use_gyro(True)
+
 
 '''
-
-'''
-
 drive_base.straight(300)
 wait(1000)
 drive_base.turn(37)
 drive_base.straight(100)
 wait(1000)
-drive_base.turn(-20)
+drive_base.turn(-24)
 drive_base.straight(120)
 wait(1000)
 drive_base.turn(45)
@@ -36,21 +35,19 @@ wait(1000)
 drive_base.turn(-20)
 drive_base.turn(-25)
 wait(1000)
-drive_base.straight(40)
+drive_base.straight(30)
 wait(1000)
-drive_base.turn(-70)
+drive_base.turn(-65)
 drive_base.straight(700)
 drive_base.straight(200)
-drive_base.turn(-30)
 '''
 
-drive_base.straight(150)
-drive_base.turn(30)#collect water sample
-drive_base.straight(100)#collect krill
-drive_base.turn(-50)
-drive_base.straight(100)#collect coral1
-drive_base.turn(-75)
-drive_base.straight(100)#collect coral2
-drive_base.turn(25)
-drive_base.straight(500)#back to red home base
-'''
+#drive_base.turn(-12)
+#drive_base.straight(150)
+#drive_base.turn(15)
+#drive_base.straight(100)
+#drive_base.turn(-25)
+#drive_base.straight(175)
+#drive_base.turn(-87)
+drive_base.turn(20)
+drive_base.straight(650)
